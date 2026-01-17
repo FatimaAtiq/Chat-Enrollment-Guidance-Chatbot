@@ -12,34 +12,47 @@ o	Academic failure
 o	Delayed graduation
 o	Increased workload stress
 This project proposes an AI-based Course Enrollment Guidance Chatbot that intelligently analyzes a student’s academic profile and recommends suitable courses and career-aligned guidance.</ul>
-📍<b><i> •	Importance of Problem</i></b>
-<ul><i>o	Academic relevance: Helps students make informed course enrollment decisions
-o	Institutional relevance: Reduces dependency on manual academic advising
-o	Societal relevance: Improves graduation rates and academic planning
-o	Industrial relevance: Similar AI advisors are used in modern LMS and EdTech platforms
-</ul>
-<ul><i>Game Board:</i> Displays the snake, fruit, and the grid for gameplay.</ul>
-<ul><i>Side Panel:</i> Shows game statistics and controls for user guidance.</ul>
-📍<b><i> Event-Driven Programming</i></b>
-<ul>The game responds to keyboard inputs for snake movement and game controls.</ul>
-<ul>The Login form reacts to user credentials using event listeners.</ul>
-<ul>Action listeners and key listeners are used to trigger game events.</ul>
-📍<b><i> Real-Time Game Mechanics</i></b>
-<ul>The Clock class manages the game cycle, ensuring smooth animations and movement.</ul>
-<ul>The SnakeGame class handles the logic for movement, collision detection, and scoring.</ul>
-<ul>The BoardPanel class is responsible for rendering the game elements.</ul>
-<h3>Project Features</h3>
-<b>🟢<i> Login Authentication System</i></b>
-<ul>Users must enter correct credentials before accessing the game.</ul>
-<ul>Simple authentication mechanism (hardcoded credentials for now).</ul>
-<b>🟢<i> Interactive Snake Gameplay</i></b>
-<ul>Grid-based movement of the snake.</ul>
-<ul>The snake grows upon eating fruit.</ul>
-<ul>The game ends when the snake collides with itself or the borders.</ul>
-<b>🟢<i> Graphical Enhancements</i></b>
-<ul>Gradient colors and shading effects for a visually appealing experience.</ul>
-<ul>The snake head has eyes indicating its movement direction.</ul>
-<ul>The fruit has a gradient effect for a more realistic look.</ul>
+📍<b><i> Importance of Problem</i></b>
+<ul><i>Academic relevance: Helps students make informed course enrollment decisions</i> </ul>
+<ul><i>Institutional relevance: Reduces dependency on manual academic advisin </i></ul>
+<ul><i>Societal relevance: Improves graduation rates and academic planning</i></ul>
+<ul><i>Industrial relevance: Similar AI advisors are used in modern LMS and EdTech platforms</i></ul>
+📍<b><i>The Scope and Assumptions</i></b>
+<ul>The system is designed for BS Computer Science students</ul>
+<ul>Student academic data is assumed to be accurate and complete</ul>
+<ul>The chatbot provides recommendations, not mandatory decisions</ul>
+<ul>The system does not replace human advisors, but assists them</ul>
+
+<h3>Dataset Description</h3>
+<b><i> •	Dataset Source</i></b>
+<ul>o	Self – generated academic dataset</ul>
+<b><i>•	Type of Dataset</i></b>
+<ul>o	Tabular / Structured Data</ul>
+<ul>o	Combination of textual and Categorical data</ul>
+<h4>Dataset 1: AI Courses Dataset</h4>
+<ul><b>o	Records: </b>60 courses</ul>
+<ul><b>o	Key attributes: </b><li>Course Name</li>
+<li>Course Level (Beginner / Intermediate / Advanced)</li>
+<li>Prerequisites</li>
+<li>Skills Covered</li>
+<li>Career Domain</li></ul>
+<ul><b>o	Purpose</b>Course recommendation based on skill and level matching</ul>
+
+<h4>Dataset 2: Career Mapping Dataset</h4>
+<ul><b>o	Records: </b>12 career paths</ul>
+<ul><b>o	Key attributes: </b><li>Career Name</li>
+<li>Required Skills</li>
+<li>Recommended Courses</li></ul>
+<ul><b>o	Purpose</b>Career-aligned course guidance</ul>
+
+<h4>Dataset 3: Student Profiles Dataset</h4>
+<ul><b>o	Records: </b>200 students</ul>
+<ul><b>o	Key attributes: </b><li>Completed courses</li>
+<li>Skills</li>
+<li>GPA</li>
+<li>Academic Interests</li></ul>
+<ul><b>o	Purpose</b>Personalized recommendation generation</ul>
+
 <b>🟢<i> Score and Game Statistics</i></b>
 <ul><i>Displays:</i></ul>
 <ul>Current score</ul>
