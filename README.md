@@ -31,8 +31,8 @@ This project proposes an AI-based Course Enrollment Guidance Chatbot that intell
 <ul>o	Combination of textual and Categorical data</ul>
 <h4>Dataset 1: AI Courses Dataset</h4>
 <ul><b>Records: </b>60 courses</ul>
-<ul><b>Key attributes: </b>
-  <li>Course Name</li>
+<ul><b>Key attributes: </b></ul>
+ <ul> <li>Course Name</li>
   <li>Course Level (Beginner / Intermediate / Advanced)</li>
   <li>Prerequisites</li>
   <li>Skills Covered</li>
@@ -41,18 +41,20 @@ This project proposes an AI-based Course Enrollment Guidance Chatbot that intell
 
 <h4>Dataset 2: Career Mapping Dataset</h4>
 <ul><b>Records: </b>12 career paths</ul>
-<ul><b>Key attributes: </b><li>Career Name</li>
-<li>Required Skills</li>
-<li>Recommended Courses</li></ul>
+<ul><b>Key attributes: </b>
+  <li>Career Name</li>
+  <li>Required Skills</li>
+  <li>Recommended Courses</li></ul>
 <ul><b>Purpose</b>Career-aligned course guidance</ul>
 
 <h4>Dataset 3: Student Profiles Dataset</h4>
-<ul><b>o	Records: </b>200 students</ul>
-<ul><b>o	Key attributes: </b><li>Completed courses</li>
-<li>Skills</li>
-<li>GPA</li>
-<li>Academic Interests</li></ul>
-<ul><b>o	Purpose</b>Personalized recommendation generation</ul>
+<ul><b>Records: </b>200 students</ul>
+<ul><b>Key attributes: </b>
+  <li>Completed courses</li>
+  <li>Skills</li>
+  <li>GPA</li>
+  <li>Academic Interests</li></ul>
+<ul><b>Purpose</b>Personalized recommendation generation</ul>
 
 <b>🟢<i> Score and Game Statistics</i></b>
 <ul><i>Displays:</i></ul>
