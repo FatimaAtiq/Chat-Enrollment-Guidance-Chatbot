@@ -31,8 +31,8 @@ This project proposes an AI-based Course Enrollment Guidance Chatbot that intell
 <ul>o	Combination of textual and Categorical data</ul>
 <h4>Dataset 1: AI Courses Dataset</h4>
 <ul><b>Records: </b>60 courses</ul>
-<ul><b>Key attributes: </b></ul>
- <ul> <li>Course Name</li>
+<ul><b>Key attributes: </b>
+  <li>Course Name</li>
   <li>Course Level (Beginner / Intermediate / Advanced)</li>
   <li>Prerequisites</li>
   <li>Skills Covered</li>
@@ -55,6 +55,13 @@ This project proposes an AI-based Course Enrollment Guidance Chatbot that intell
   <li>GPA</li>
   <li>Academic Interests</li></ul>
 <ul><b>Purpose</b>Personalized recommendation generation</ul>
+
+<h4>Dataset 4: Intent-Response Dataset</h4>
+<ul><b>Records: </b>197 Intent-Response pairs</ul>
+<ul><b>Key attributes: </b>
+  <li>User Intent</li>
+  <li>Chatbot Response</li></ul>
+<ul><b>Purpose</b>Natural language interaction with students</ul>
 
 <b>🟢<i> Score and Game Statistics</i></b>
 <ul><i>Displays:</i></ul>
