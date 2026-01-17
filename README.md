@@ -63,26 +63,170 @@ This project proposes an AI-based Course Enrollment Guidance Chatbot that intell
   <li>Chatbot Response</li></ul>
 <ul><b>Purpose</b>Natural language interaction with students</ul>
 
-<b>🟢<i> Score and Game Statistics</i></b>
-<ul><i>Displays:</i></ul>
-<ul>Current score</ul>
-<ul>Fruits eaten</ul>
-<ul>Next fruit score</ul>
-<ul>The score increases as the snake eats fruits.</ul>
-<b>🟢<i> Multiple Control Options</i></b>
-<ul>Players can use WASD or arrow keys for movement.</ul>
-<ul>Pause (P) and Resume options.</ul>
-<ul>Exit the game using the Escape (Esc) key.</ul>
-<b>🟢<i> Game State Management</i></b>
-<ul><i>New Game State:</i> Shows a message before the game starts.</ul>
-<ul><i>Paused State:</i> Allows players to pause and resume the game.</ul>
-<ul><i>Game Over State:</i> Displays a message and prompts the user to restart.</ul>
-<b>🟢<i> Optimized Performance</i></b>
-<ul>Uses double buffering for smooth rendering.</ul>
-<ul>Clock-based cycle handling ensures consistent frame updates.</ul>
+<h3>Learning Model and Task Section</h3>
+<b><i>•	Learning Tasks</i></b>
+<ul>o	Classification: Identify student intent (career advice, course recommendation, prerequisite query)</ul>
+<ul>o	Recommendation: Match student profiles with suitable courses</ul>
+<ul>o	Similarity Matching: Compare student skills with course requirements</ul>
+<ul>o	Input Processing: Speech-to-text conversion is applied before intent classification to allow voice-based student interaction.</ul>
+
+<b><i>•	Selected Model</i></b>
+<ul>o	TF-IDF Vectorizer + Logistic Regression: For intent classification</ul>
+<ul>o	Cosine Similarity: For course and skill matching</ul>
+<ul>o	Rule-assisted Decision Logic: For prerequisite validation</ul>
+
+<b><i>•	Justification</i></b>
+<ul>o	Logistic Regression is:
+	Interpretable
+	Efficient for text classification
+	Suitable for small-to-medium datasets
+
+</ul>
+<ul>o	Cosine similarity works well for:
+	Skill and course text comparison
+</ul>
+<ul>o	Hybrid AI approach ensures:
+	Accuracy
+	Explainability
+	Academic feasibility</ul>
+
+<h3>Learning Paradigm, Input & Output</h3>
+<b><i>•	Learning Paradigm</i></b>
+<ul>o	Supervised Learning
+Intent classification using labeled intent-response data</ul>
+<ul>o	Information Retrieval and Similarity Learning
+Course Recommendation</ul>
+
+<b><i>•	System Inputs</i></b>
+<ul>o	Student profile (skills, GPA, completed courses)</ul>
+<ul>o	User query (text input)</ul>
+<ul>o	Career preference (optional)</ul>
+<ul>o	The chatbot also supports speech-based interaction. Spoken queries are converted into text using a speech recognition module and processed through the same NLP and classification pipeline as text input.</ul>
+
+<b><i>•	System Outpus</i></b>
+<ul>o	Recommended Courses</ul>
+<ul>o	Career Suggestions</ul>
+<ul>o	Prerequisite warnings</ul>
+<ul>o	Academic guidance messages</ul>
+
+<h3>Performance Evaluation Metrics</h3>
+<b><i>•	Metrics Used:</i></b>
+<ul>o	Accuracy: Measures correctness of intent classification</ul>
+<ul>o	Precision and Recall: Important to avoid wrong academic advice</ul>
+<ul>o	F1 – Score: Balances precision and recall</ul>
+<ul>o	Confusion Matrix: Analyzes misclassified intents</ul>
+
+<b><i>•	Justification</i></b>
+<ul>o	Since wrong recommendations can negatively impact students, precision and recall are critical</ul>
+<ul>o	Accuracy alone is insufficient for educational systems</ul>
+
+<b><i>•	System Outpus</i></b>
+<ul>o	Recommended Courses</ul>
+<ul>o	Career Suggestions</ul>
+<ul>o	Prerequisite warnings</ul>
+<ul>o	Academic guidance messages</ul>
+
+<h3>PEAS Analysis</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System Environment Table</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+
+        th, td {
+            border: 2px solid #000;
+            padding: 14px 18px;
+            font-size: 16px;
+        }
+
+        th {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        td:first-child {
+            font-style: italic;
+            font-weight: 600;
+            width: 30%;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        td:last-child {
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Performance</td>
+            <td>Accurate course and career recommendations</td>
+        </tr>
+        <tr>
+            <td>Environment</td>
+            <td>Partially observable, dynamic academic environment</td>
+        </tr>
+        <tr>
+            <td>Actuators</td>
+            <td>Display recommendations, responses, warnings</td>
+        </tr>
+        <tr>
+            <td>Sensors</td>
+            <td>Student input, profile data, course datasets</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+<b><i>•	Environment Characteristics</i></b>
+<ul>o	Partially observable: Not all student preferences are known</ul>
+<ul>o	Dynamic: Courses and skills evolve over time</ul>
+<ul>o	Non-deterministic: Student decisions vary</ul>
+
+<h3>Potential Applications</h3>
+<b><i>•	Real World Applications</i></b>
+<ul>o	University academic advising systems</ul>
+<ul>o	Learning Management Systems (LMS)</ul>
+<ul>o	EdTech platforms</ul>
+<ul>o	Career counseling portals</ul>
+
+<b><i>•	Users / Stakeholders</i></b>
+<ul>o	University students</ul>
+<ul>o	Academic advisors</ul>
+<ul>o	Educational institutions</ul>
+<ul>o	Curriculum designers</ul>
+
+<b><i>•	Future Extensions</i></b>
+<ul>o	Integration with real university databases</ul>
+<ul>o	Use of deep learning models</ul>
+<ul>o	GPA prediction</ul>
+<ul>o	Multi-language chatbot</ul>
+<ul>o	Mobile application deployment</ul>
+
+
 <dl>
   <dt>Tool Used</dt>
-  <dd> <a href="https://www.jetbrains.com/idea/" target="_blank" rel="norefferer">  <img src="https://yt3.googleusercontent.com/sbknt7hweoIpYAqf_KyTjlDpe3DFdmG4MSd6mLITqhgVykim_cTf-4Tokamrw3X0iJ3a9h334g=s900-c-k-c0x00ffffff-no-rj" alt="Intelli J Idea" width="40" height="40"></a></dd>
+  <dd> <a href="https://code.visualstudio.com/" target="_blank" rel="norefferer">  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY2JEzCppRpKpOx5u62PHXEfEO2dCHNFUg2A&s" alt="VS code" width="40" height="40"></a></dd>
   <dt>Language Used</dt>
-  <dd><a href="https://www.java.com" target="_blank" rel="noreferrer" title="Java"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a></dd>
+  <dd><a href="https://www.python.org/" target="_blank" rel="noreferrer" title="Java"> <img src="https://thebite.org/wp-content/uploads/2025/04/Python-1200x1200.webp" alt="java" width="40" height="40"/> </a></dd>
 </dl></p>
