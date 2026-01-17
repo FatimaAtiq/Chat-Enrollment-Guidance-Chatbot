@@ -31,11 +31,12 @@ This project proposes an AI-based Course Enrollment Guidance Chatbot that intell
 <ul>o	Combination of textual and Categorical data</ul>
 <h4>Dataset 1: AI Courses Dataset</h4>
 <ul><b>Records: </b>60 courses</ul>
-<ul><b>Key attributes: </b><li>Course Name</li>
-<li>Course Level (Beginner / Intermediate / Advanced)</li>
-<li>Prerequisites</li>
-<li>Skills Covered</li>
-<li>Career Domain</li></ul>
+<ul><b>Key attributes: </b>
+  <li>Course Name</li>
+  <li>Course Level (Beginner / Intermediate / Advanced)</li>
+  <li>Prerequisites</li>
+  <li>Skills Covered</li>
+  <li>Career Domain</li></ul>
 <ul><b>Purpose</b>Course recommendation based on skill and level matching</ul>
 
 <h4>Dataset 2: Career Mapping Dataset</h4>
