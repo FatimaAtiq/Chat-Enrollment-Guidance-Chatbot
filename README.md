@@ -127,51 +127,6 @@ Course Recommendation</ul>
 <ul>o	Academic guidance messages</ul>
 
 <h3>PEAS Analysis</h3>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>System Environment Table</title>
-    <style>
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 40px;
-        }
-
-        table {
-            width: 70%;
-            margin: auto;
-            border-collapse: collapse;
-            background-color: #ffffff;
-        }
-
-        th, td {
-            border: 2px solid #000;
-            padding: 14px 18px;
-            font-size: 16px;
-        }
-
-        th {
-            text-align: center;
-            font-weight: bold;
-        }
-
-        td:first-child {
-            font-style: italic;
-            font-weight: 600;
-            width: 30%;
-            background-color: #f0f0f0;
-            text-align: center;
-        }
-
-        td:last-child {
-            width: 70%;
-        }
-    </style>
-</head>
-<body>
-
     <table>
         <tr>
             <th>Component</th>
@@ -194,9 +149,6 @@ Course Recommendation</ul>
             <td>Student input, profile data, course datasets</td>
         </tr>
     </table>
-
-</body>
-</html>
 
 <b><i>•	Environment Characteristics</i></b>
 <ul>o	Partially observable: Not all student preferences are known</ul>
