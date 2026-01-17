@@ -1,7 +1,7 @@
 <h1 align="center">Course Enrollment Guidance Chatbot 🤖</h1>
 <h2 align="center"><i>Python Based Chatbot</i></h2>
 <h3>Problem Statement</h3>
-<p>📍<b><i>The Problem we aim to solvei></b>
+<p>📍<b><i>The Problem we aim to solve</i></b>
 <ul>University students often face difficulty in selecting appropriate courses each semester due to:
 o	Complex degree requirements
 o	Multiple prerequisite dependencies
@@ -11,10 +11,13 @@ As a result, students may enroll in unsuitable courses, causing:
 o	Academic failure
 o	Delayed graduation
 o	Increased workload stress
-This project proposes an AI-based Course Enrollment Guidance Chatbot that intelligently analyzes a student’s academic profile and recommends suitable courses and career-aligned guidance.
-idePanel, Clock, SnakeGame, LoginForm).</ul>
-📍<b><i> Java Swing GUI for User Interaction</i></b>
-<ul><i>Login Form:</i> Ensures only authenticated users can play the game.</ul>
+This project proposes an AI-based Course Enrollment Guidance Chatbot that intelligently analyzes a student’s academic profile and recommends suitable courses and career-aligned guidance.</ul>
+📍<b><i> •	Importance of Problem</i></b>
+<ul><i>o	Academic relevance: Helps students make informed course enrollment decisions
+o	Institutional relevance: Reduces dependency on manual academic advising
+o	Societal relevance: Improves graduation rates and academic planning
+o	Industrial relevance: Similar AI advisors are used in modern LMS and EdTech platforms
+</ul>
 <ul><i>Game Board:</i> Displays the snake, fruit, and the grid for gameplay.</ul>
 <ul><i>Side Panel:</i> Shows game statistics and controls for user guidance.</ul>
 📍<b><i> Event-Driven Programming</i></b>
