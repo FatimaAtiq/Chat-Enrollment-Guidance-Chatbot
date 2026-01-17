@@ -1,0 +1,13 @@
+career_role,required_skills,suggested_courses
+AI Engineer,Python;Machine Learning;Deep Learning,AI101;ML201;DL301
+Data Scientist,Python;Statistics;Machine Learning,DS101;ML201
+ML Engineer,Machine Learning;Deployment;Cloud,MLOps401;ML201
+Researcher,Mathematics;Deep Learning;Research Skills,DL301;Advanced AI
+AI Product Manager,PyTorch;Mathematics;Deep Learning;Cloud,DL301;AI101;DS101;MLOPS401
+Computer Vision Engineer,SQL;Research Skills;NLP,DS101;MLOPS401;AI101
+NLP Engineer,SQL;Power BI;TensorFlow,AI101;DL301;DS101;ML201
+Data Analyst,Deployment;Machine Learning;Cloud,ML201;DS101;DL301
+AI Consultant,Python;PyTorch;Power BI;Cloud,DS101;AI101;ML201;MLOPS401
+Robotics Engineer,Statistics;Cloud;SQL,ML201;DS101;MLOPS401;DL301
+Business Intelligence Analyst,SQL;Deep Learning;Mathematics;Python,AI101;MLOPS401;ML201;DL301
+AI QA Engineer,Power BI;Statistics;Research Skills;Deep Learning;Research Skills,AI101;DL301;ML201

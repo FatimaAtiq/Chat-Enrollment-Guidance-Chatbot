@@ -1,0 +1,61 @@
+course_id,course_name,difficulty_level,prerequisites,duration_weeks,learning_outcomes,career_relevance,course_type,enrollment_status
+AI101,Introduction to Artificial Intelligence,Beginner,Python;Basic Math,8,AI concepts;Search algorithms,AI Engineer;Data Scientist,University,Open
+ML201,Machine Learning,Intermediate,Python;Statistics,10,Supervised and unsupervised learning,ML Engineer;Data Scientist,University,Open
+DL301,Deep Learning,Advanced,Machine Learning;Linear Algebra,12,Neural networks;CNNs;RNNs,AI Engineer;Researcher,Online,Open
+DS101,Statistics for Data Science,Beginner,Basic Math,6,Probability;Statistical analysis,Data Scientist,Online,Open
+MLOPS401,MLOps and Deployment,Advanced,Machine Learning;Cloud Basics,8,Model deployment;CI/CD,ML Engineer,Online,Closed
+CV494,Computer Vision II,Intermediate,MLOPS401,6,MLOps pipelines;Data preprocessing;Deployment basics;Feature engineering,NLP Engineer;Robotics Engineer;Researcher,Online,Open
+SE481,Software Engineering for AI I,Intermediate,AI101;Cloud,12,Reinforcement learning intro;MLOps pipelines;Transformers;Hands-on projects;Feature engineering,AI Engineer,University,Closed
+MATH147,Math for AI Projects,Advanced,Cloud,12,Model evaluation;Reinforcement learning intro;Transformers;Time-series analysis;Data preprocessing,AI Engineer,University,Open
+ML373,Machine Learning Applications Fundamentals,Beginner,CV494;Statistics;Linear Algebra,6,Neural networks;Feature engineering;Data preprocessing,Computer Vision Engineer;AI Product Manager;Data Scientist,University,Closed
+DATA488,Data Engineering Fundamentals,Intermediate,CV494;Basic Programming;Statistics,12,Experiment design;Research methods;Transformers,AI Consultant;ML Engineer,Online,Open
+NLP338,Natural Language Processing Projects,Beginner,DS101,6,APIs integration;Reinforcement learning intro;Research methods;Transformers;Neural networks,ML Engineer;AI QA Engineer;AI Consultant,University,Open
+DATA358,Data Engineering II,Advanced,DL301;Basic Math,14,Data preprocessing;Hands-on projects;Ethics and fairness;Time-series analysis;Experiment design,Researcher;NLP Engineer,University,Open
+MATH246,Math for AI Projects,Intermediate,NLP338;Python;Basic Programming,6,Optimization;Reinforcement learning intro;Transformers;Deployment basics,AI Product Manager;AI Consultant;Computer Vision Engineer,Online,Open
+DS281,Data Science Foundations Lab,Advanced,NLP338;SE481,14,Model evaluation;Transformers;Reinforcement learning intro;Computer vision pipelines;Experiment design,Computer Vision Engineer;AI Product Manager,University,Closed
+MATH111,Math for AI Lab,Beginner,AI Fundamentals,8,Deployment basics;SQL analytics;Model evaluation,Data Scientist;Researcher,University,Open
+DS407,Data Science Foundations Projects,Beginner,Cloud;Statistics,12,MLOps pipelines;Time-series analysis;Ethics and fairness,AI Consultant;Data Analyst,Online,Open
+CV260,Computer Vision Bootcamp,Intermediate,Cloud,12,Transformers;Reinforcement learning intro;MLOps pipelines;Model evaluation,AI Consultant,University,Open
+AI430,Applied AI Concepts Projects,Advanced,ML201;CV260;Basic Math,8,Research methods;APIs integration;Deployment basics;MLOps pipelines,Data Scientist;Robotics Engineer,Online,Open
+AI314,Applied AI Concepts I,Beginner,MATH147;Basic Math,10,Foundations;Computer vision pipelines;Optimization,AI Product Manager;AI Engineer;Computer Vision Engineer,University,Open
+NLP343,Natural Language Processing Advanced Topics,Advanced,DS407;MATH111;Python;Basic Math,6,Feature engineering;Deployment basics;MLOps pipelines;Hands-on projects,Robotics Engineer;Data Analyst,University,Open
+CV316,Computer Vision Advanced Topics,Intermediate,MLOPS401,12,SQL analytics;Foundations;Ethics and fairness;Time-series analysis;Model evaluation,Business Intelligence Analyst;ML Engineer,Online,Open
+SE197,Software Engineering for AI Advanced Topics,Intermediate,DATA358;MLOPS401;Data Analysis;Cloud,14,Foundations;Reinforcement learning intro;Experiment design;SQL analytics;Computer vision pipelines,AI Engineer;Data Analyst,University,Open
+ML278,Machine Learning Applications II,Intermediate,ML201;AI314;Basic Programming;Statistics,6,SQL analytics;Computer vision pipelines;Data preprocessing;MLOps pipelines,AI QA Engineer;NLP Engineer;Computer Vision Engineer,University,Open
+DATA120,Data Engineering Lab,Beginner,,10,APIs integration;Reinforcement learning intro;Experiment design;Deployment basics,AI Product Manager,University,Open
+MATH126,Math for AI Bootcamp,Intermediate,ML201;Machine Learning,12,Research methods;Reinforcement learning intro;Computer vision pipelines;Model evaluation;Ethics and fairness,AI QA Engineer;AI Engineer;Researcher,Online,Open
+SE142,Software Engineering for AI Projects,Intermediate,Probability;Basic Programming,6,Computer vision pipelines;Transformers;APIs integration,AI Consultant;Business Intelligence Analyst,University,Closed
+MATH330,Math for AI I,Intermediate,NLP343;Probability,6,Reinforcement learning intro;Time-series analysis;Data preprocessing,Computer Vision Engineer,Online,Open
+DS136,Data Science Foundations II,Intermediate,DATA358;Cloud,6,Deployment basics;Research methods;Time-series analysis;Data preprocessing;Ethics and fairness,AI Consultant,University,Open
+SE262,Software Engineering for AI Advanced Topics,Beginner,,8,APIs integration;Reinforcement learning intro;Optimization;Deployment basics,NLP Engineer;AI QA Engineer,University,Open
+DATA204,Data Engineering I,Beginner,Statistics,12,Computer vision pipelines;Time-series analysis;Model evaluation,Researcher;Data Analyst;AI Product Manager,University,Open
+MATH362,Math for AI II,Beginner,,8,Foundations;Time-series analysis;APIs integration;Ethics and fairness,Computer Vision Engineer;AI Consultant;Data Scientist,University,Open
+SE469,Software Engineering for AI Advanced Topics,Intermediate,MATH126;Cloud;Python,6,Computer vision pipelines;Model evaluation;Research methods,AI Product Manager;Researcher,Online,Open
+DS495,Data Science Foundations II,Intermediate,,14,Transformers;Data preprocessing;APIs integration,NLP Engineer;Robotics Engineer,Online,Open
+ML230,Machine Learning Applications II,Intermediate,AI430;ML373;Probability;Data Analysis,6,Data preprocessing;Deployment basics;SQL analytics;Computer vision pipelines;Transformers,AI Consultant;AI Engineer;NLP Engineer,University,Open
+ML125,Machine Learning Applications Advanced Topics,Intermediate,DS281;Machine Learning;Python,12,SQL analytics;Transformers;APIs integration;Ethics and fairness;Optimization,Business Intelligence Analyst;Data Analyst;AI QA Engineer,University,Open
+DS327,Data Science Foundations Projects,Intermediate,Cloud,8,Computer vision pipelines;Time-series analysis;Reinforcement learning intro;Model evaluation,Researcher;NLP Engineer,University,Open
+CV340,Computer Vision I,Beginner,,6,Transformers;Reinforcement learning intro;MLOps pipelines,Computer Vision Engineer,Online,Open
+CV492,Computer Vision II,Intermediate,DATA204;SE469;AI Fundamentals,6,Reinforcement learning intro;APIs integration;Research methods,Robotics Engineer,Online,Open
+AI246,Applied AI Concepts Projects,Intermediate,MATH362;AI314;Python;Basic Math,12,Neural networks;Time-series analysis;Reinforcement learning intro,ML Engineer;Business Intelligence Analyst,University,Open
+MATH385,Math for AI Lab,Beginner,SE262;DS327;Cloud,14,Deployment basics;Optimization;Reinforcement learning intro,AI Engineer;Researcher,Online,Open
+CV410,Computer Vision Fundamentals,Intermediate,,6,Computer vision pipelines;Experiment design;Research methods,AI Consultant,University,Open
+MATH185,Math for AI Projects,Advanced,NLP343;CV492;Data Analysis,14,Experiment design;Transformers;SQL analytics;MLOps pipelines;Foundations,AI Engineer;AI Product Manager,University,Closed
+NLP473,Natural Language Processing Bootcamp,Intermediate,AI Fundamentals;Probability,14,Ethics and fairness;Hands-on projects;Experiment design;Model evaluation;Neural networks,NLP Engineer;AI Consultant;Business Intelligence Analyst,University,Open
+AI395,Applied AI Concepts Advanced Topics,Beginner,Basic Programming,12,MLOps pipelines;Feature engineering;SQL analytics,AI Consultant;AI QA Engineer;ML Engineer,University,Open
+MATH441,Math for AI Projects,Intermediate,DATA358;Data Analysis,10,Time-series analysis;Neural networks;Experiment design;Optimization;Research methods,Researcher;Data Analyst,University,Open
+NLP462,Natural Language Processing II,Intermediate,CV316;Basic Programming,14,Neural networks;Transformers;Optimization;APIs integration;Computer vision pipelines,Business Intelligence Analyst;NLP Engineer;AI Engineer,University,Open
+AI249,Applied AI Concepts Advanced Topics,Beginner,MATH185;AI Fundamentals,8,SQL analytics;Neural networks;APIs integration,Data Scientist,University,Open
+AI444,Applied AI Concepts Fundamentals,Beginner,,6,Computer vision pipelines;Experiment design;Optimization;SQL analytics,ML Engineer,University,Closed
+DATA346,Data Engineering Advanced Topics,Beginner,CV316;Python,6,Ethics and fairness;Hands-on projects;Data preprocessing;Feature engineering;MLOps pipelines,ML Engineer,Online,Closed
+DS485,Data Science Foundations Bootcamp,Advanced,,10,Optimization;Computer vision pipelines;Transformers;Ethics and fairness;APIs integration,Researcher;AI QA Engineer;Computer Vision Engineer,Online,Open
+CV159,Computer Vision Lab,Beginner,MATH185;Statistics,6,Computer vision pipelines;Transformers;Feature engineering;Model evaluation;APIs integration,Business Intelligence Analyst;NLP Engineer;Researcher,Online,Open
+SE444,Software Engineering for AI I,Beginner,Basic Programming,8,Neural networks;Reinforcement learning intro;Ethics and fairness,Data Analyst;AI Engineer,Online,Open
+NLP436,Natural Language Processing Lab,Intermediate,Basic Math;AI Fundamentals,10,Reinforcement learning intro;APIs integration;Transformers,Data Scientist;AI Product Manager;Data Analyst,Online,Open
+CV170,Computer Vision Projects,Beginner,AI246;DATA120;Data Analysis,12,Feature engineering;Ethics and fairness;Model evaluation;Neural networks;APIs integration,NLP Engineer;AI Engineer;Data Scientist,University,Open
+CV395,Computer Vision Fundamentals,Beginner,ML230;Basic Math,8,Experiment design;Model evaluation;Research methods;Reinforcement learning intro;Foundations,Computer Vision Engineer;Researcher,Online,Closed
+AI388,Applied AI Concepts Projects,Intermediate,AI249,12,Foundations;Feature engineering;Model evaluation;SQL analytics,AI Engineer;Data Scientist,University,Open
+DATA118,Data Engineering Lab,Intermediate,Machine Learning;Basic Programming,12,Reinforcement learning intro;SQL analytics;Model evaluation;Computer vision pipelines,Researcher;Computer Vision Engineer;AI Engineer,University,Open
+SE372,Software Engineering for AI II,Intermediate,,6,Research methods;MLOps pipelines;Reinforcement learning intro;APIs integration,Robotics Engineer,Online,Open
+DS243,Data Science Foundations II,Advanced,DATA346;MATH147,12,Foundations;Ethics and fairness;Feature engineering;Hands-on projects;Research methods,ML Engineer;AI QA Engineer;AI Consultant,University,Open
+AI307,Applied AI Concepts Projects,Beginner,,8,Transformers;Ethics and fairness;Computer vision pipelines;SQL analytics;Research methods,AI Engineer;Robotics Engineer;Data Analyst,University,Open

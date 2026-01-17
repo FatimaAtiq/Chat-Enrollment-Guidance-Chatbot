@@ -1,0 +1,198 @@
+intent,user_query_example,bot_response
+course_recommendation,Which AI course should I start with?,"Based on your background, Introduction to Artificial Intelligence is recommended."
+prerequisites,Do I need math for AI?,"Yes. Linear algebra, probability, and statistics are important for AI."
+career_guidance,I want to become an AI engineer,"Start with Python and AI fundamentals, then move to Machine Learning and Deep Learning."
+enrollment_process,How can I enroll in an AI course?,You can enroll through the official university or platform portal before the deadline.
+difficulty_query,Is AI difficult for beginners?,"AI can be challenging, but with structured learning it becomes manageable."
+learning_mode,Can I study AI online?,"Yes, many AI courses are available in online and hybrid modes."
+enrollment_process,Where can I check course availability?,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+difficulty_query,Will I struggle with Deep Learning?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+prerequisites,Is NLP343 eligible for me?,I can check eligibility and show missing prerequisites for the course you mention.
+enrollment_process,Can I enroll if a course is closed?,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+learning_mode,Help me with DATA488,"I can help with recommendations, prerequisites, career guidance, and planning."
+difficulty_query,Which course is easiest to start with?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+prerequisites,Can I take MATH126 if I completed DS407?,I can check eligibility and show missing prerequisites for the course you mention.
+career_guidance,Guide me for Data Analyst roadmap,Tell me your target career role and I will map skills and recommended courses for that role.
+course_recommendation,Recommend me AI courses for beginners,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+career_guidance,How can I prepare for Robotics Engineer?,Tell me your target career role and I will map skills and recommended courses for that role.
+course_recommendation,Show top AI courses I can enroll in,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+learning_mode,Can you recommend courses?,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,Do I need Python before AI388?,I can check eligibility and show missing prerequisites for the course you mention.
+learning_mode,Check prerequisites for DATA346,"I can help with recommendations, prerequisites, career guidance, and planning."
+learning_mode,Check prerequisites for DS281,"I can help with recommendations, prerequisites, career guidance, and planning."
+career_guidance,What skills do I need for NLP Engineer?,Tell me your target career role and I will map skills and recommended courses for that role.
+difficulty_query,How difficult is Machine Learning?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+career_guidance,What skills do I need for Data Analyst?,Tell me your target career role and I will map skills and recommended courses for that role.
+course_recommendation,Suggest 3 courses based on my profile,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+prerequisites,What are the prerequisites for DATA120?,I can check eligibility and show missing prerequisites for the course you mention.
+difficulty_query,Is AI388 suitable for beginners?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+learning_mode,Show remaining requirements,"I can help with recommendations, prerequisites, career guidance, and planning."
+career_guidance,Which courses match the career Robotics Engineer?,Tell me your target career role and I will map skills and recommended courses for that role.
+enrollment_process,What is the enrollment deadline process?,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+prerequisites,Can I take AI249 if I completed ML125?,I can check eligibility and show missing prerequisites for the course you mention.
+difficulty_query,Is MATH185 hard?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+course_recommendation,What courses should I take next semester for AI?,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+learning_mode,Check prerequisites for SE469,"I can help with recommendations, prerequisites, career guidance, and planning."
+learning_mode,Help me with AI430,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,Is SE481 eligible for me?,I can check eligibility and show missing prerequisites for the course you mention.
+prerequisites,Is DS407 eligible for me?,I can check eligibility and show missing prerequisites for the course you mention.
+career_guidance,What skills do I need for AI Product Manager?,Tell me your target career role and I will map skills and recommended courses for that role.
+prerequisites,What are the prerequisites for MATH441?,I can check eligibility and show missing prerequisites for the course you mention.
+learning_mode,Help me with CV395,"I can help with recommendations, prerequisites, career guidance, and planning."
+enrollment_process,How to register for next semester courses?,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+difficulty_query,Is CV395 hard?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+prerequisites,Is DS281 eligible for me?,I can check eligibility and show missing prerequisites for the course you mention.
+difficulty_query,Is CV340 suitable for beginners?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+career_guidance,What skills do I need for Robotics Engineer? kindly,Tell me your target career role and I will map skills and recommended courses for that role.
+course_recommendation,Show top AI courses I can enroll in kindly,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+enrollment_process,How to register for next semester courses? for BSCS,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+learning_mode,Help me with ML373 in detail,"I can help with recommendations, prerequisites, career guidance, and planning."
+difficulty_query,Will I struggle with Deep Learning? please,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+prerequisites,Is CV170 eligible for me? next semester,I can check eligibility and show missing prerequisites for the course you mention.
+difficulty_query,How difficult is Machine Learning? please,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+enrollment_process,How to register for next semester courses? next semester,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+enrollment_process,How to register for next semester courses? in detail,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+course_recommendation,Recommend me AI courses for beginners kindly,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+course_recommendation,What courses should I take next semester for AI? in detail,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+learning_mode,Help me with MATH126 please,"I can help with recommendations, prerequisites, career guidance, and planning."
+course_recommendation,Recommend me AI courses for beginners for BSCS,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+prerequisites,Is CV494 eligible for me? this semester,I can check eligibility and show missing prerequisites for the course you mention.
+difficulty_query,Is DS495 hard? please,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+career_guidance,Guide me for Robotics Engineer roadmap next semester,Tell me your target career role and I will map skills and recommended courses for that role.
+enrollment_process,How do I enroll in courses? this semester,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+learning_mode,Check prerequisites for SE372 next semester,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,Do I need Python before AI395? kindly,I can check eligibility and show missing prerequisites for the course you mention.
+career_guidance,Which courses match the career ML Engineer? please,Tell me your target career role and I will map skills and recommended courses for that role.
+career_guidance,What skills do I need for AI QA Engineer? in detail,Tell me your target career role and I will map skills and recommended courses for that role.
+difficulty_query,Is MATH385 suitable for beginners? please,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+career_guidance,What skills do I need for Computer Vision Engineer? next semester,Tell me your target career role and I will map skills and recommended courses for that role.
+career_guidance,How can I prepare for NLP Engineer? in detail,Tell me your target career role and I will map skills and recommended courses for that role.
+prerequisites,Can I take NLP343 if I completed CV316? in detail,I can check eligibility and show missing prerequisites for the course you mention.
+enrollment_process,Can I enroll if a course is closed? for BSCS,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+learning_mode,Show remaining requirements next semester,"I can help with recommendations, prerequisites, career guidance, and planning."
+career_guidance,I want to become a NLP Engineer. What should I study? for BSCS,Tell me your target career role and I will map skills and recommended courses for that role.
+difficulty_query,Which course is easiest to start with? kindly,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+course_recommendation,Which course should I take after Machine Learning? kindly,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+career_guidance,What skills do I need for Data Scientist? this semester,Tell me your target career role and I will map skills and recommended courses for that role.
+prerequisites,Can I take CV410 if I completed NLP343? for BSCS,I can check eligibility and show missing prerequisites for the course you mention.
+learning_mode,Can you recommend courses? please,"I can help with recommendations, prerequisites, career guidance, and planning."
+difficulty_query,Which course is easiest to start with? next semester,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+learning_mode,Check prerequisites for MATH330 for BSCS,"I can help with recommendations, prerequisites, career guidance, and planning."
+difficulty_query,Is CV410 suitable for beginners? please,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+learning_mode,Check prerequisites for NLP473 in detail,"I can help with recommendations, prerequisites, career guidance, and planning."
+course_recommendation,Which course should I take after Machine Learning? in detail,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+career_guidance,I want to become a Data Scientist. What should I study? please,Tell me your target career role and I will map skills and recommended courses for that role.
+career_guidance,How can I prepare for AI QA Engineer? next semester,Tell me your target career role and I will map skills and recommended courses for that role.
+difficulty_query,How difficult is Machine Learning? this semester,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+enrollment_process,Where can I check course availability? next semester,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+prerequisites,Do I need Python before ML278? please,I can check eligibility and show missing prerequisites for the course you mention.
+enrollment_process,What is the enrollment deadline process? in detail,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+career_guidance,How can I prepare for Data Analyst? kindly,Tell me your target career role and I will map skills and recommended courses for that role.
+enrollment_process,How to register for next semester courses? this semester,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+career_guidance,I want to become a AI Engineer. What should I study? in detail,Tell me your target career role and I will map skills and recommended courses for that role.
+course_recommendation,What courses should I take next semester for AI? please,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+career_guidance,What skills do I need for Data Analyst? kindly,Tell me your target career role and I will map skills and recommended courses for that role.
+learning_mode,Can you recommend courses? in detail,"I can help with recommendations, prerequisites, career guidance, and planning."
+enrollment_process,How to register for next semester courses? kindly,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+difficulty_query,Is DS136 suitable for beginners? in detail,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+prerequisites,Is AI430 eligible for me? please,I can check eligibility and show missing prerequisites for the course you mention.
+course_recommendation,Suggest 3 courses based on my profile kindly,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+career_guidance,What skills do I need for Data Scientist? for BSCS,Tell me your target career role and I will map skills and recommended courses for that role.
+difficulty_query,Which course is easiest to start with? this semester,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+difficulty_query,How difficult is Machine Learning? in detail,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+difficulty_query,How difficult is Machine Learning? kindly,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+learning_mode,Check prerequisites for DATA488 this semester,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,List missing prerequisites for CV340 kindly,I can check eligibility and show missing prerequisites for the course you mention.
+learning_mode,Check prerequisites for ML125 kindly,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,Do I need Python before SE469? kindly,I can check eligibility and show missing prerequisites for the course you mention.
+enrollment_process,How to register for next semester courses? please,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+prerequisites,Is MATH246 eligible for me? next semester,I can check eligibility and show missing prerequisites for the course you mention.
+learning_mode,Can you recommend courses? this semester,"I can help with recommendations, prerequisites, career guidance, and planning."
+learning_mode,Help me with CV170 kindly,"I can help with recommendations, prerequisites, career guidance, and planning."
+difficulty_query,Is ML201 hard? for BSCS,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+career_guidance,What skills do I need for AI Product Manager? kindly,Tell me your target career role and I will map skills and recommended courses for that role.
+course_recommendation,Suggest 3 courses based on my profile next semester,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+difficulty_query,Will I struggle with Deep Learning? in detail,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+difficulty_query,Is DS281 suitable for beginners? in detail,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+career_guidance,I want to become a Data Analyst. What should I study? tomorrow.,Tell me your target career role and I will map skills and recommended courses for that role.
+enrollment_process,Where can I check course availability? step by step!!,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+learning_mode,Can you recommend courses? step by step (typed),"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,Is MATH385 eligible for me? !!,I can check eligibility and show missing prerequisites for the course you mention.
+career_guidance,Guide me for Robotics Engineer roadmap today (typed),Tell me your target career role and I will map skills and recommended courses for that role.
+learning_mode,Help me with AI314 quickly.,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,Can I take DATA346 if I completed CV159? tomorrow?,I can check eligibility and show missing prerequisites for the course you mention.
+learning_mode,What can you do? step by step!!,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,Can I take DATA346 if I completed CV170? right now (voice),I can check eligibility and show missing prerequisites for the course you mention.
+difficulty_query,Will I struggle with Deep Learning? right now (voice),Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+course_recommendation,Suggest 3 courses based on my profile quickly (voice),"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+learning_mode,What can you do? right now (voice),"I can help with recommendations, prerequisites, career guidance, and planning."
+difficulty_query,Will I struggle with Deep Learning? step by step?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+learning_mode,Can you recommend courses? quickly?,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,Do I need Python before DS136? tomorrow (voice),I can check eligibility and show missing prerequisites for the course you mention.
+career_guidance,What skills do I need for Robotics Engineer? quickly!!,Tell me your target career role and I will map skills and recommended courses for that role.
+career_guidance,What skills do I need for AI Engineer? ?,Tell me your target career role and I will map skills and recommended courses for that role.
+course_recommendation,Recommend me AI courses for beginners right now (voice),"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+enrollment_process,What is the enrollment deadline process? tomorrow (urgent),You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+career_guidance,Guide me for Computer Vision Engineer roadmap .,Tell me your target career role and I will map skills and recommended courses for that role.
+learning_mode,What can you do? right now?,"I can help with recommendations, prerequisites, career guidance, and planning."
+learning_mode,Help me with MATH441 step by step (voice),"I can help with recommendations, prerequisites, career guidance, and planning."
+learning_mode,Show remaining requirements  (voice),"I can help with recommendations, prerequisites, career guidance, and planning."
+difficulty_query,Is MATH111 hard?  (voice),Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+learning_mode,Show remaining requirements step by step (voice),"I can help with recommendations, prerequisites, career guidance, and planning."
+enrollment_process,How do I enroll in courses? step by step?,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+course_recommendation,What courses should I take next semester for AI? right now!!,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+learning_mode,Help me with AI395 quickly (typed),"I can help with recommendations, prerequisites, career guidance, and planning."
+difficulty_query,Is MATH185 suitable for beginners? step by step.,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+prerequisites,Is CV494 eligible for me? !!,I can check eligibility and show missing prerequisites for the course you mention.
+learning_mode,Show remaining requirements today.,"I can help with recommendations, prerequisites, career guidance, and planning."
+career_guidance,How can I prepare for Researcher? quickly (typed),Tell me your target career role and I will map skills and recommended courses for that role.
+learning_mode,What can you do? step by step?,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,List missing prerequisites for ML230 step by step!!,I can check eligibility and show missing prerequisites for the course you mention.
+career_guidance,I want to become a Researcher. What should I study? right now (voice),Tell me your target career role and I will map skills and recommended courses for that role.
+prerequisites,What are the prerequisites for SE469? quickly?,I can check eligibility and show missing prerequisites for the course you mention.
+career_guidance,What skills do I need for ML Engineer? quickly (voice),Tell me your target career role and I will map skills and recommended courses for that role.
+career_guidance,I want to become a ML Engineer. What should I study?  (voice),Tell me your target career role and I will map skills and recommended courses for that role.
+difficulty_query,Is MLOPS401 hard? !!,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+enrollment_process,How to register for next semester courses? quickly (urgent),You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+enrollment_process,Where can I check course availability? quickly (urgent),You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+difficulty_query,Which course is easiest to start with? .,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+prerequisites,Is SE444 eligible for me? right now.,I can check eligibility and show missing prerequisites for the course you mention.
+learning_mode,Help me with DATA346 step by step (urgent),"I can help with recommendations, prerequisites, career guidance, and planning."
+career_guidance,Which courses match the career AI QA Engineer? !!,Tell me your target career role and I will map skills and recommended courses for that role.
+course_recommendation,Show top AI courses I can enroll in quickly (voice),"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+course_recommendation,What courses should I take next semester for AI? step by step (urgent),"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+course_recommendation,What courses should I take next semester for AI?  (urgent),"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+career_guidance,I want to become a AI Product Manager. What should I study?  (urgent),Tell me your target career role and I will map skills and recommended courses for that role.
+career_guidance,Guide me for AI Product Manager roadmap  (typed),Tell me your target career role and I will map skills and recommended courses for that role.
+learning_mode,Check prerequisites for CV340 right now (voice),"I can help with recommendations, prerequisites, career guidance, and planning."
+career_guidance,Which courses match the career Robotics Engineer? tomorrow!!,Tell me your target career role and I will map skills and recommended courses for that role.
+career_guidance,I want to become a Robotics Engineer. What should I study? step by step (urgent),Tell me your target career role and I will map skills and recommended courses for that role.
+prerequisites,Can I take AI444 if I completed DS495? ?,I can check eligibility and show missing prerequisites for the course you mention.
+course_recommendation,Recommend me AI courses for beginners today!!,"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+difficulty_query,Will I struggle with Deep Learning? step by step (urgent),Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+prerequisites,Do I need Python before CV316? tomorrow (urgent),I can check eligibility and show missing prerequisites for the course you mention.
+course_recommendation,Recommend me AI courses for beginners step by step (typed),"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+prerequisites,What are the prerequisites for MATH111? right now?,I can check eligibility and show missing prerequisites for the course you mention.
+enrollment_process,Where can I check course availability? .,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+enrollment_process,Can I enroll if a course is closed? quickly.,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+learning_mode,Can you recommend courses? quickly.,"I can help with recommendations, prerequisites, career guidance, and planning."
+prerequisites,What are the prerequisites for AI249? today!!,I can check eligibility and show missing prerequisites for the course you mention.
+enrollment_process,How do I enroll in courses? step by step.,You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+career_guidance,Guide me for Business Intelligence Analyst roadmap step by step (voice),Tell me your target career role and I will map skills and recommended courses for that role.
+prerequisites,Is NLP462 eligible for me? today?,I can check eligibility and show missing prerequisites for the course you mention.
+enrollment_process,How do I enroll in courses? step by step (voice),You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+difficulty_query,Is SE481 hard? right now (urgent),Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+difficulty_query,Is CV340 suitable for beginners? today (urgent),Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+career_guidance,Guide me for Computer Vision Engineer roadmap step by step (voice),Tell me your target career role and I will map skills and recommended courses for that role.
+career_guidance,Which courses match the career Researcher? today?,Tell me your target career role and I will map skills and recommended courses for that role.
+difficulty_query,Will I struggle with Deep Learning? right now!!,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+career_guidance,What skills do I need for AI Consultant? today.,Tell me your target career role and I will map skills and recommended courses for that role.
+career_guidance,Guide me for Data Scientist roadmap today?,Tell me your target career role and I will map skills and recommended courses for that role.
+learning_mode,Show remaining requirements tomorrow!!,"I can help with recommendations, prerequisites, career guidance, and planning."
+course_recommendation,Recommend me AI courses for beginners quickly (voice),"Based on your profile and prerequisites, here are the best eligible courses ranked for you."
+learning_mode,Can you recommend courses? right now?,"I can help with recommendations, prerequisites, career guidance, and planning."
+difficulty_query,Is AI444 hard? right now?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+prerequisites,Can I take MATH147 if I completed AI101? today!!,I can check eligibility and show missing prerequisites for the course you mention.
+enrollment_process,Where can I check course availability?  (urgent),You can enroll via the official portal. I can also tell you if the course is Open/Closed in the catalog.
+difficulty_query,Is CV260 suitable for beginners? ?,Difficulty depends on your background. I will compare your profile to the course difficulty and prerequisites.
+learning_mode,Help me with SE262 tomorrow?,"I can help with recommendations, prerequisites, career guidance, and planning."
