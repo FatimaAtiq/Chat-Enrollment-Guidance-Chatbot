@@ -1,11 +1,3 @@
-# ==========================================
-# Course Enrollment Guidance Chatbot (Streamlit)
-# + Intent Train/Test Metrics
-# + Course Eligibility (Rule-based prereqs)
-# + Recommendations (Weighted + optional Cosine Similarity)
-# + Voice Input (mic) + Voice Reply (TTS)
-# ==========================================
-
 import re
 import tempfile
 from collections import defaultdict, deque
@@ -14,9 +6,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-# =========================
-# OPTIONAL VOICE IMPORTS
-# =========================
 MIC_AVAILABLE = True
 SR_AVAILABLE = True
 PYDUB_AVAILABLE = True
@@ -42,9 +31,6 @@ try:
 except Exception:
     GTTS_AVAILABLE = False
 
-# =========================
-# ML IMPORTS (scikit-learn)
-# =========================
 SKLEARN_AVAILABLE = True
 try:
     from sklearn.model_selection import train_test_split
@@ -61,9 +47,6 @@ try:
 except Exception:
     SKLEARN_AVAILABLE = False
 
-# =========================
-# PAGE CONFIG + CSS
-# =========================
 st.set_page_config(
     page_title="Course Enrollment Guidance Chatbot",
     page_icon="🎓",
@@ -111,9 +94,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# =========================
-# DATASET PATHS
-# =========================
 AI_COURSES_CSV = "ai_courses_expanded.csv"
 CAREER_MAP_CSV = "career_mapping_expanded.csv"
 INTENT_CSV = "intent_response_expanded.csv"
@@ -121,9 +101,6 @@ STUDENTS_CSV = "student_profiles_expanded.csv"
 
 TOP_K_RECOMMEND = 5
 
-# =========================
-# HELPERS
-# =========================
 COURSE_ID_REGEX = re.compile(r"\b[A-Z]{2,5}\d{3}\b")
 
 
@@ -144,10 +121,6 @@ def normalize_list_field(x):
 def safe_lower(x):
     return str(x).strip().lower()
 
-
-# =========================
-# VOICE HELPERS
-# =========================
 def speech_to_text_from_mic_bytes(audio_bytes: bytes) -> str:
     """
     Convert mic bytes (often webm/ogg) -> WAV PCM -> SpeechRecognition (Google).
@@ -198,23 +171,6 @@ def tts_audio_gtts_bytes(text: str) -> bytes:
     except Exception:
         return b""
 
-
-def tts_speak_pyttsx3(text: str):
-    """
-    Offline system voice (can be flaky inside Streamlit).
-    """
-    try:
-        import pyttsx3
-        engine = pyttsx3.init()
-        engine.say(text)
-        engine.runAndWait()
-    except Exception:
-        pass
-
-
-# =========================
-# COURSE CATALOG + PREREQ GRAPH
-# =========================
 class CourseCatalog:
     def __init__(self, courses_df: pd.DataFrame):
         self.df = courses_df.copy()
@@ -283,10 +239,6 @@ class CourseCatalog:
         dfs(target)
         return sorted(list(missing))
 
-
-# =========================
-# STUDENT PROFILE
-# =========================
 class Student:
     def __init__(self, row: dict):
         self.student_id = str(row.get("student_id", "")).strip()
@@ -375,10 +327,6 @@ def eligible_courses(catalog: CourseCatalog, student: Student):
 
     return eligible, blocked
 
-
-# =========================
-# RECOMMENDER
-# =========================
 def build_course_text(row):
     parts = [
         str(row.get("course_name", "")),
@@ -450,10 +398,6 @@ def recommend_courses(catalog: CourseCatalog, student: Student, career_map_df: p
     ranked = sorted(list(zip(eligible, final_scores)), key=lambda x: x[1], reverse=True)
     return ranked[:top_k], blocked
 
-
-# =========================
-# INTENT MODEL
-# =========================
 class IntentModel:
     def __init__(self):
         self.pipeline = None
@@ -520,9 +464,7 @@ class IntentModel:
             .lower()
             .replace(" ", "_")
         )
-# =========================
-# CHATBOT CORE
-# =========================
+
 class CourseChatbot:
     def __init__(self, catalog: CourseCatalog, career_map_df: pd.DataFrame, intent_model: IntentModel, intent_df: pd.DataFrame):
         self.catalog = catalog
@@ -561,12 +503,12 @@ class CourseChatbot:
         ):
             return self.handle_check_prereq(student, t)
         
-        if re.search(r"\b(online|hybrid|remote|study mode|distance learning)\b", t, re.I) or intent == "learning_mode":
-            return self.handle_learning_mode(student, t)
-        
         if "recommend" in t.lower() or "career" in t.lower() or intent == "recommend_courses":
             return self.handle_recommend(student, use_cosine=use_cosine, top_k=top_k)
         
+        if re.search(r"\b(online|hybrid|remote|study mode|distance learning)\b", t, re.I) or intent == "learning_mode":
+            return self.handle_learning_mode(student, t)
+
 
         if "plan" in t.lower() or "topological" in t.lower() or "semester order" in t.lower():
             return self.handle_plan()
@@ -706,11 +648,6 @@ class CourseChatbot:
             "Start with Python and AI fundamentals online, then move to Machine Learning and Deep Learning courses."
        )
 
-
-
-# =========================
-# DATA LOADING
-# =========================
 @st.cache_data(show_spinner=False)
 def load_data():
     courses_df = pd.read_csv(AI_COURSES_CSV)
@@ -733,9 +670,6 @@ def validate_csv(df, required, name):
         st.stop()
         validate_csv(intent_df, REQUIRED_COLUMNS["intent_response_expanded.csv"], "Intent CSV")
 
-# =========================
-# SESSION STATE INIT
-# =========================
 if "initialized" not in st.session_state:
     st.session_state.initialized = False
 if "messages" not in st.session_state:
@@ -753,18 +687,13 @@ if "voice_autosend" not in st.session_state:
 if "last_audio_id" not in st.session_state:
     st.session_state.last_audio_id = None
 
-# ✅ TTS storage (this is what fixes “no player shown”)
 if "tts_audio_bytes" not in st.session_state:
     st.session_state.tts_audio_bytes = None
 if "tts_audio_mime" not in st.session_state:
     st.session_state.tts_audio_mime = "audio/mp3"
 if "tts_for_bot_index" not in st.session_state:
-    st.session_state.tts_for_bot_index = None  # which bot message index should show audio
+    st.session_state.tts_for_bot_index = None 
 
-
-# =========================
-# HEADER
-# =========================
 st.markdown(
     """
     <div class="header-container">
@@ -775,9 +704,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# =========================
-# EARLY WARNING IF SKLEARN MISSING
-# =========================
 if not SKLEARN_AVAILABLE:
     st.error(
         "❌ scikit-learn (sklearn) is not installed.\n\n"
@@ -786,9 +712,6 @@ if not SKLEARN_AVAILABLE:
     )
     st.stop()
 
-# =========================
-# SIDEBAR
-# =========================
 with st.sidebar:
     st.markdown("## ⚙️ Controls")
 
@@ -800,14 +723,10 @@ with st.sidebar:
     st.markdown("### 🎙 Voice Settings")
 
     VOICE_INPUT = st.checkbox("Enable Voice Input", value=True)
-    VOICE_REPLY = st.checkbox("Enable Voice Reply", value=True)  # default ON so you can test
+    VOICE_REPLY = st.checkbox("Enable Voice Reply", value=True)  
     st.session_state.voice_autosend = st.checkbox("Auto-send after voice input", value=True)
 
-    tts_mode = st.selectbox(
-        "Voice Reply Mode",
-        ["Browser Audio (gTTS - needs internet)", "System Voice (pyttsx3 - offline)"],
-        index=0,
-    )
+    tts_mode = "Browser Audio (gTTS - needs internet)"
 
     if VOICE_INPUT:
         if not MIC_AVAILABLE:
@@ -816,14 +735,15 @@ with st.sidebar:
             st.warning("Install SpeechRecognition: `pip install SpeechRecognition`")
         if not PYDUB_AVAILABLE:
             st.warning("Install pydub: `pip install pydub` (ffmpeg also required)")
+    
+    if VOICE_REPLY and not GTTS_AVAILABLE:
+        st.warning("Install gTTS: `pip install gTTS` (internet required)")
 
-    if VOICE_REPLY and tts_mode.startswith("Browser") and not GTTS_AVAILABLE:
-        st.warning("Install gTTS: `pip install gTTS` (and needs internet)")
 
     st.markdown("---")
 
     if st.button("📥 Load Datasets + Train/Test", use_container_width=True, type="primary"):
-        st.cache_data.clear()  # Add this at the top of your app before loading CSVs
+        st.cache_data.clear()
         courses_df, career_map_df, intent_df, students_df = load_data()
 
         metrics = st.session_state.intent_model.train_and_eval(intent_df, test_size=test_size)
@@ -877,9 +797,6 @@ with st.sidebar:
     else:
         st.info("Initialize first to select a student profile.")
 
-# =========================
-# MAIN: MODEL METRICS
-# =========================
 if st.session_state.eval_metrics is not None:
     m = st.session_state.eval_metrics
     c1, c2, c3, c4 = st.columns(4)
@@ -896,9 +813,6 @@ if st.session_state.eval_metrics is not None:
 
 st.markdown("---")
 
-# =========================
-# MAIN: CHAT UI
-# =========================
 if not st.session_state.initialized:
     st.info("Click **Load Datasets + Train/Test** in the sidebar to start.")
     st.stop()
@@ -924,25 +838,19 @@ def do_send(text: str):
 
     st.session_state.messages.append({"role": "bot", "content": reply})
 
-    # ✅ Prepare TTS bytes (STORE ONLY; render later so player always shows)
     if VOICE_REPLY and reply:
-        if tts_mode.startswith("Browser"):
-            audio_bytes = tts_audio_gtts_bytes(reply)
-            if audio_bytes:
-                st.session_state.tts_audio_bytes = audio_bytes
-                st.session_state.tts_audio_mime = "audio/mp3"
-                # store index of the bot message that should show the player
-                st.session_state.tts_for_bot_index = len(st.session_state.messages) - 1
-            else:
-                st.session_state.tts_audio_bytes = None
-                st.session_state.tts_for_bot_index = None
-                st.warning("TTS failed. Ensure internet is ON and gTTS works.")
+        audio_bytes = tts_audio_gtts_bytes(reply)
+        if audio_bytes:
+            st.session_state.tts_audio_bytes = audio_bytes
+            st.session_state.tts_audio_mime = "audio/mp3"
+            st.session_state.tts_for_bot_index = len(st.session_state.messages) - 1
         else:
-            # system voice (may not work reliably in Streamlit)
-            tts_speak_pyttsx3(reply)
+            st.session_state.tts_audio_bytes = None
+            st.session_state.tts_for_bot_index = None
+            st.warning("TTS failed. Ensure internet is ON and gTTS works.")
 
 
-# Show chat (and show audio player directly under the last bot reply)
+
 st.markdown("## 💬 Chat")
 
 for i, msg in enumerate(st.session_state.messages):
@@ -951,14 +859,12 @@ for i, msg in enumerate(st.session_state.messages):
     else:
         st.markdown(f"<div class='chat-bubble bot-bubble'>{msg['content']}</div>", unsafe_allow_html=True)
 
-        # ✅ show audio player exactly under the bot message that created it
         if (
             VOICE_REPLY
             and tts_mode.startswith("Browser")
             and st.session_state.tts_for_bot_index == i
             and st.session_state.tts_audio_bytes
         ):
-            # Use a stable key so Streamlit renders the player properly
             st.audio(
                 st.session_state.tts_audio_bytes,
                 format=st.session_state.tts_audio_mime,
@@ -968,7 +874,6 @@ for i, msg in enumerate(st.session_state.messages):
 st.markdown("---")
 st.markdown("### Ask a question")
 
-# Typed input
 user_text = st.text_input(
     "Type your question (or use microphone):",
     value=st.session_state.voice_text,
@@ -976,7 +881,6 @@ user_text = st.text_input(
     key="typed_input",
 )
 
-# Mic input — process only NEW audio using audio["id"]
 if VOICE_INPUT and MIC_AVAILABLE and SR_AVAILABLE:
     audio = mic_recorder(
         start_prompt="🎙 Start Recording",
@@ -1016,7 +920,7 @@ colA, colB = st.columns([1, 1])
 with colA:
     if st.button("Send", type="primary", use_container_width=True):
         do_send(user_text)
-        st.session_state.voice_text = ""  # optional clear
+        st.session_state.voice_text = ""
         st.rerun()
 
 with colB:
