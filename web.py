@@ -306,8 +306,6 @@ def prerequisites_satisfied(course_row, student: Student):
     ok = len(missing_courses) == 0 and len(missing_skills) == 0
     return ok, missing_courses, missing_skills, known_skills
 
-
-
 def eligible_courses(catalog: CourseCatalog, student: Student):
     eligible = []
     blocked = []
