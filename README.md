@@ -103,7 +103,7 @@ Course Recommendation</ul>
 <ul>o	Career preference (optional)</ul>
 <ul>o	The chatbot also supports speech-based interaction. Spoken queries are converted into text using a speech recognition module and processed through the same NLP and classification pipeline as text input.</ul>
 
-<b><i>•	System Outpus</i></b>
+<b><i>•	System Outputs</i></b>
 <ul>o	Recommended Courses</ul>
 <ul>o	Career Suggestions</ul>
 <ul>o	Prerequisite warnings</ul>
